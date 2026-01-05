@@ -1,84 +1,160 @@
 # Credit_Card_dashboard_Report
 
-📊 Credit Card Analytics Dashboard | Power BI
-🔍 Project Overview
+Credit Card Analytics Dashboard (Power BI)
+Project Overview
 
-This project presents an end-to-end Credit Card Analytics Dashboard built using Power BI, focusing on customer demographics and transaction behavior. The dashboard provides actionable insights while maintaining clean design principles and data integrity.
+This project implements an end-to-end Credit Card Analytics solution using Power BI, designed to analyze customer demographics and credit card transaction behavior. The solution follows a structured business intelligence workflow, including data modeling, DAX-based calculations, and interactive dashboard development.
 
-📁 Dataset
+The primary goal of the project is to transform raw customer and transaction data into actionable insights through well-defined KPIs, optimized visuals, and dynamic filtering, while maintaining analytical accuracy and professional dashboard design standards.
 
-Customer Data: Demographics, income group, education level, asset ownership
+Data Sources and Modeling
 
-Transaction Data: Spending categories, transaction amounts, interest earned, utilization ratio
+The analysis is based on two structured datasets:
 
-(Data provided for academic/project use)
+Customer Table
 
-🧩 Dashboards Included
-1️⃣ Customer Report
+Contains customer-level attributes including:
 
-Total Customers
+🔹Demographic information
 
-Average Age
+🔹Income group classification
 
-Average Credit Utilization
+🔹Education level
 
-Customers by:
+🔹Asset ownership indicators
 
-Age Group
+🔹Credit utilization metrics
 
-Income Group
+Transaction Table
 
-Education Level
+Contains transaction-level attributes including:
 
-Asset Ownership Analysis
+🔹Spending category
 
-Interactive slicers for Gender, Age Group, and Income Group
+🔹Transaction amount
 
-2️⃣ Transaction Report
+🔹Interest earned
 
-Total Transaction Amount
+🔹Average utilization ratio
 
-Total Interest Earned
+🔹Transaction mode
 
-Spending Category Analysis
+A one-to-many relationship is established between the Customer and Transaction tables using a unique customer identifier (Client_Num). This relationship enables correct aggregation, drill-down, and cross-filtering across both dashboards.
 
-Transaction Mode Distribution
+Dashboard Architecture
 
-Average Transaction Amount by Category
+The Power BI report consists of two dedicated analytical dashboards:
 
-Interest Contribution by Category (Treemap)
+1. Credit Card Customer Report
 
-🛠 Tools & Skills Used
+This dashboard focuses on customer profiling and segmentation.
 
-Power BI
+Key KPIs
 
-DAX (Calculated Columns & Measures)
+🔹Total Customers: Distinct count of active customers
 
-Data Modeling
+🔹Average Age: Mean customer age across the filtered dataset
 
-Dashboard Design & Formatting
+🔹Average Credit Utilization Ratio: Average utilization of credit limits
 
-Business Insight Analysis
+Analytical Visuals
 
-🎯 Key Learnings
+🔹Customer distribution by Age Group (derived using DAX)
 
-Selecting KPIs based on available data
+🔹Customer distribution by Income Group (derived using DAX)
 
-Avoiding misleading metrics
+🔹Customer distribution by Education Level
 
-Designing clean, professional dashboards
+🔹Asset Ownership Analysis to compare ownership patterns across customers
 
-Aligning visuals for executive-level reporting
+Interactivity
 
-📷 Dashboard Preview
+🔹Slicers for Gender, Age Group, and Income Group
 
-(Add screenshots here)
+🔹Dynamic cross-filtering across all visuals for segmented analysis
 
-📌 File
+This dashboard supports demographic analysis and identification of dominant customer segments.
 
-Credit_Card_Report.pbix
+2. Credit Card Transaction Report
 
-👤 Author
+This dashboard focuses on spending behavior and revenue-related analysis.
 
+Key KPIs
+
+🔹Total Transaction Amount: Aggregated transaction value
+
+🔹Total Interest Earned: Revenue generated from credit card usage
+
+🔹Total Customers: Customer base contributing to transactions
+
+Analytical Visuals
+
+🔹Transaction amount by Spending Category
+
+🔹Interest contribution by category using a Treemap to represent proportional revenue distribution
+
+🔹Transaction Mode Distribution (e.g., chip, swipe, online)
+
+🔹Average Transaction Amount by Category to compare transaction value intensity
+
+This dashboard enables identification of high-value spending categories, revenue-driving segments, and customer transaction preferences.
+
+DAX Calculations and Logic
+
+The following DAX techniques were applied during development:
+
+Calculated Columns
+
+🔹Age Group classification
+
+🔹Income Group classification
+
+Measures
+
+🔹Aggregated KPIs for transaction amount, interest earned, and customer count
+
+🔹Average-based metrics for utilization and transaction values
+
+DAX logic was implemented with a focus on correct aggregation behavior, filter context awareness, and performance efficiency.
+
+Design and Visualization Considerations
+
+🔹KPIs were selected strictly based on available and reliable data to avoid misleading insights
+
+🔹Redundant or analytically unsupported metrics were intentionally excluded
+
+🔹Appropriate visual types were chosen to ensure each chart communicates a distinct analytical purpose
+
+🔹Visual alignment, spacing, and formatting were optimized to achieve an executive-ready dashboard layout
+
+🔹Binary indicator fields were avoided in visuals to improve interpretability
+
+Project Structure
+
+Power BI Report
+
+🔹Data Model and Relationships
+
+🔹DAX Measures and Calculated Columns
+
+🔹Interactive Visualizations
+
+🔹Final Dashboard Layout
+
+Tools and Technologies
+
+🔹Power BI
+
+🔹DAX
+
+🔹Power Query
+
+🔹Microsoft Excel
+
+Conclusion
+
+This project demonstrates a complete Power BI analytics workflow, from data modeling and DAX calculations to professional dashboard design. The final solution provides a technically sound and business-focused view of credit card customer and transaction data, supporting both high-level decision-making and detailed analytical exploration.
+
+Author
 Devang Magare
-Aspiring Data Analyst | Power BI Enthusiast
+Aspiring Data Analyst | Power BI
